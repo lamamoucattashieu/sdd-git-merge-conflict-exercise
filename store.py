@@ -8,6 +8,10 @@ def calculate_total(
     if apply_discount and total > 50:
         total *= 0.90
 
+    # Feature B: Apply an 8% sales tax to every order.
+    if apply_tax:
+        total += total * 0.08
+
     return total
 
 
